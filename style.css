@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    background-color:  #f4f4f4;
+}
+.Container{
+    background-color: palevioletred;
+    border: 0px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 0px 4px 8px rgba(0, 0,0,.3);
+    padding: 10px;
+    width: 500px;
+    margin: 10px;
+}
+.input-box{
+    border: 2px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.input-box input{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: transparent;
+    letter-spacing: 4px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: lightgreen;
+    color: black;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.input-box img{
+    opacity: 0.3;
+    cursor: pointer;
+}
+.input-box img:hover{
+    opacity: 1;
+}
+.alertmsg{
+    background-color: lightgreen;
+    color: black;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.alertmsg.show{
+    bottom: 20px;
+    opacity: 1;
+}
