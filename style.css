@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     display: flex;
     margin: 0;
@@ -14,7 +17,8 @@ body{
     border-style: solid;
     box-shadow: 0px 4px 8px rgba(0, 0,0,.3);
     padding: 10px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 10px;
 }
 .input-box{
@@ -33,6 +37,7 @@ body{
     font-size: 25px;
     background-color: transparent;
     letter-spacing: 4px;
+    width: 100%;
 }
 
 .btn{
@@ -78,4 +83,32 @@ body{
 .alertmsg.show{
     bottom: 20px;
     opacity: 1;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .input-box {
+        padding: 8px;
+    }
+
+    .input-box input {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .alertmsg {
+        right: 10px;
+        bottom: 10px;
+        font-size: 16px;
+        padding: 10px;
+    }
 }
